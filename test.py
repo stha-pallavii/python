@@ -276,14 +276,15 @@ print(x[4:])        #slice from 4th to last index
 
 #negative indexing
 y = "Namaste Nepal"
-print(y[-4:-2])     #-4th index doesn't count i.e. -2 to -3
+print(y[-4:-2])     #negative index starts from -1
+                    #-4:-2 means -4 and -3 (-2 isn't included) = ep
 
 #uppercase, lowercase
 x = "Namaste Nepal"
 print(x.upper())
 print(x.lower())
 
-#remove whitespace
+#remove spaces from beginning and end of string
 x = "  Hello World  "
 print(x)
 print(x.strip())

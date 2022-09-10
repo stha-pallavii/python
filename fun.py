@@ -322,4 +322,72 @@ print(list(result))         #output = [9, 11, 13]
 
 
 
+# local and global variables
+product = 10
+def multiply(n1, n2):
+    product = n1 * n2
+    print("Value of product inside function", product)
+
+multiply(20, 3)                                         #output = Value of product inside function 60   #local variable
+print("value of product outside function", product)     #output = value of product outside function 10  #global variable
+
+#using global keyword to change the global variable inside a function
+msg = "Hello"
+
+def greeting():
+    msg = "Hi"      #here, value of global variable msg doesn't change
+    print(msg)
+
+greeting()          #output = Hi
+print(msg)          #output = Hello
+
+#using global keyword in above case
+msg = 'Hello'
+
+def greeting():
+    global msg
+    msg = "Hi"      #here, value of global variable is changed to this newly assigned value
+    print(msg)
+
+greeting()          #output = Hi
+print(msg)          #output = Hi
+
+
+#global in nested functions
+def fun1():
+    a = 10
+
+    def fun2():
+        global a
+        a = 30
+
+    print("before calling fun2: ", a)       #output = 10
+    print("calling fun2 now")               #output = calling fun2 now
+    fun2()
+    print("after calling fun2: ", a)        #output = 10
+
+fun1()
+print("a in global: ", a)                   #output = 30
+
+#import by renaming a module
+import config as c
+print(c.a)
+print("The value of a in config.py is ", c.a)
+
+#import specific attribute from a module
+from config import d
+print("The value of d in config.py is ", d)     #no need to use dot operator in this case
+
+#import multiple attributes from another module
+from config import a,b,d
+
+print(a)
+print(b)
+print(d)
+
+#import all attributes/ names from a module
+from config import *
+print (a); print (b); print (c); print (d)
+
+
 

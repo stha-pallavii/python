@@ -213,9 +213,113 @@ def square(num):
     return squared_result
 print(square(5))
 
+
+#lambda function with multiple arguments
+"""function which returns the larger number among two numbers"""
+larger = lambda x,y: x if x>y else y
+print(larger(20, 35))
+
+#using lambda function inside another function
+#sorting a list in alphabetical order:
+
+fruits = ['apple', 'mango', 'banana', 'pineapple', 'kiwi', 'mandarin']
+
+fruits.sort()
+print(fruits)       #output =  ['apple', 'banana', 'kiwi', 'mandarin', 'mango', 'pineapple']
+
+#To sort based on length of each string(from shortest to longest)
+fruits = ['apple', 'mango', 'banana', 'pineapple', 'kiwi', 'mandarin']
+
+fruits.sort(key = lambda x:len(x))  #this lambda function takes the length of each string as key
+print(fruits)
+
+#function that doubles or triples the number sent
+def myfunc(n):
+    return lambda a: a*n
+
+doubler = myfunc(2)
+tripler = myfunc(3)
+print(doubler(15))          #output = 30
+print(tripler(15))          #output = 45
+
+
+
+
+
+
+
+
+#argument, expression and call function in single line
+(lambda x,y: x+y) (4,5)     #output = 9
+
+(lambda a,b: (a+b)/2) (124, 205)    #prints the average of the two numbers
+
+
 #using filter() function
 numbers = [1,4,2,4,6,7,4,3,8,6,8,9]
 """function to get a list with even numbers only"""
-new_numbers = list(filter(lambda x: (x%2 ==0), numbers))
+even_numbers = list(filter(lambda x: (x%2 ==0), numbers))
+print(even_numbers)
 
-print(new_numbers)
+#above function is same as
+even_numbers = filter(lambda x:x%2==0, numbers)
+print(list(even_numbers))
+
+#same as
+numbers = [1,4,2,4,6,7,4,3,8,6,8,9]
+
+def even_numbers(n):
+    if n%2 == 0:
+        return n
+results = filter(even_numbers, numbers)
+print(list(results))
+
+
+# map() function
+def addition(n):
+    return n+n
+
+nums = [2,3,5,7,8,9,6,4,10]
+result = map(addition, nums)
+print(result)                   #the function addition(n) is applied to each element of the list
+#output = <map object at 0x0000020C099AB6A0>
+list(result)        #output =  [4, 6, 10, 14, 16, 18, 12, 8, 20]
+
+#map() function with lambda function
+nums = [2,3,5,7,8,9,6,4,10]
+result = map(lambda n: n+n, nums)
+print(list(result))    #or set(result)     or      tuple(result)
+
+#returning result in a single line
+list(map(lambda x: x+x, [2,3,5,7,8,9,6,4,10]))
+
+#calculating square of each number in a list
+
+#using for loop and append()
+numbers = [1,2,3,4,5,6]
+
+squared_numbers = []        #creating empty list to store squared results
+
+square = lambda n: n**2     #creating a function called square to calculate square
+
+for n in numbers:
+    squared_numbers.append(square(n))
+
+print(squared_numbers)      #output = [1, 4, 9, 16, 25, 36]
+
+#using map function
+numbers = [1,2,3,4,5,6]
+squared_numbers = list(map(lambda n: n**2, numbers))
+print(squared_numbers)      #output = [1, 4, 9, 16, 25, 36]
+
+
+#passing multiple iterable arguments to map()
+num1 = [4,5,6]
+num2 = [5,6,7]
+
+result = map(lambda x,y: x+y, num1,num2)     #here, map function is taking two iterable arguments i.e. two lists num1 and num2
+print(list(result))         #output = [9, 11, 13]
+
+
+
+

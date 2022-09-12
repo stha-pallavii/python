@@ -249,6 +249,8 @@ print(tripler(15))          #output = 45
 
 
 
+
+
 #argument, expression and call function in single line
 (lambda x,y: x+y) (4,5)     #output = 9
 

@@ -390,6 +390,3 @@ print(d)
 #import all attributes/ names from a module
 from config import *
 print (a); print (b); print (c); print (d)
-
-
-

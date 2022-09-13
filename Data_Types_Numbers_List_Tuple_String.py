@@ -1,4 +1,4 @@
-#Python data types in detail (List, Dictionary, Tuple, Set, Strings)
+#Python data types in detail (Numeric, List, Tuple, Strings)
 
 #number (int, float, complex)
 
@@ -378,4 +378,4 @@ print(x)
 
 #------------------------------------------------------------------------------------------------------
 
-#remaining types i.e. set and dictionary in another file sd.py
+#remaining types i.e. set and dictionary in another file set_dictionary.py

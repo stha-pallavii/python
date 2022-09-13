@@ -213,19 +213,169 @@ print(type(a))      #output = <class 'tuple'>
 a = "hello",        #comma makes it a tuple despite lacking parentheses
 print(type(a))      ##output = <class 'tuple'>
 
+#indexing in tuple
+tup = ('a','b','c','d','e','f','g')
+print(tup[1])
+print(tup[-2])
+
+print(tuple5[2])
+
+#slicing tuple
+tup = ('a','b','c','d','e','f','g')
+print(tup[1:5])
+print(tup[-4:-1])
+print(tup[:4])
+print(tup[3:])
+print(tup[:-5])
+print(tup[-3:])
+print(tup[:])       #prints all elements from beginning to end
+
+#changing tuple values (only mutable element can be changed)
+tuple = (1,2,3,4,[4,5,6],7)
+
+tuple[4][2] = 10
+print(tuple)            #output = (1, 2, 3, 4, [4, 5, 10], 7)
+
+#concatenation
+tup1 = (1,2,3)
+tup2 = ('a','b','c')
+tup3 = tup1 + tup2
+print(tup3)
+
+#repeat elements in a tuple
+tup = (1,2,3,4)
+new_tup = tup * 2
+print(new_tup)
+
+#delete a tuple
+del tup
+
+#tuple methods
+tuple = ('a', 'e', 'i', 'o','u')
+print(tuple.count('e'))
+print(tuple.index('o'))
+
+#tuple membership test
+letters = ('a', 'p', 'p', 'l', 'e',)
+
+print('l' in letters)
+print('b' in letters)
+print('a' not in letters)
+
+#iterating through a tuple
+letters = ('a', 'p', 'p', 'l', 'e',)
+for i in letters:
+    print("alphabet = ", i)
+
+#------------------------------------------------------------------------------------------------------
+
+#python STRING
+
+#use backslash to avoid error while using single or double quotes inside a string
+
+x = "She said, \"I\'m from Chitwan, what about you?\""      # \ is used before every quotation mark
+print(x)
+
+#index in string
+x = "Nepal"
+print(x[2])
+print("the last letter of \'Nepal\' is ", x[-1])
+
+#delete a string
+del x
+
+#string concatenation
+x = 'Peter'
+y = 'Parker'
+spiderman = x + ' ' + y
+print("The name of spiderman is ", spiderman + '.')
+
+#repeat a string
+x = 'Hello'
+print(x * 4)        #output = HelloHelloHelloHello
+
+print((x+' ')*4)    #output = Hello Hello Hello Hello
+
+#concatenating by writing two string literals together
+print('Hello' 'World')      #output = HelloWorld
+#using parentheses
+print('Hello'
+      'World')
+
+#iterating through a string
+string = 'My name is John'
+
+count = 0
+
+for i in string:
+    count = count + 1
+
+print(count)
+
+#string membership test
+text = "I love Nepal"
+print('N' in text)
+print('I lo' in text)
+print('Nepl' in text)       #False because order of characters doesn't match
+
+#length of string / character count
+text = "I love Nepal"
+print(len(text))
+
+#enumerate
+txt = 'I love Nepal'
+#print(list(enumerate(txt)))           #gives the index of each character in pair
+
+#replace characters or substrings
+x = "I am learning python"
+print(x.replace('python', 'java'))
+
+#find the index of a character or substring
+x = "I am learning python"
+print(x.find('earn'))
+
+#printing result in multiple lines  \n
+x = "Hello.\nMy name is Pallavi.\nI am from Chitwan.\nI am a student."
+print(x)
+
+#raw string to ignore escape sequence   r
+print(r"Hello.\nMy name is Pallavi.\nI am from Chitwan.")
+
+#formatting string      format() method
+#default(implicit) order
+text = "{}, {} and {}".format('apple', 'mango', 'banana')
+print('\n---text---')
+print(text)
+
+#order using positional argument
+text = "{1} {0} {2}".format('love', 'I', 'icecream')
+print('\n---positional order---')
+print(text)
+
+#order using keyword argument
+text = "{s} {b} {j} and {g}".format(s='I', b='love', j='icecream', g='waffles')
+print('\n--keyword order---')
+print(text)
+
+#old style formatting       #sprintf()  %
+x = 145.3788383
+print('value of x is %4.3f' %x)      #output = 145.379
+
+print('%10.3f' %x)                     #output =   145.379
+
+#built in methods with string
+#lowercase
+text = "PYthoN"
+print(text.lower())
+
+#uppercase
+print(text.upper())
+
+#join method
+x = ' '.join(['This', 'will', 'join', 'all', 'words', 'into', 'a', 'string'])
+print(x)
 
 
+#------------------------------------------------------------------------------------------------------
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+#remaining types i.e. set and dictionary in another file sd.py

@@ -1,0 +1,7 @@
+environments/
+venv/
+.git/
+.idea/
+.ipynb_checkpoints/
+__pycache__/
+basic_adv_python/.ipynb_checkpoints/

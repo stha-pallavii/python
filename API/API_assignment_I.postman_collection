@@ -34,7 +34,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://127.0.0.1:5000/posts/10",
+					"raw": "http://127.0.0.1:5000/posts/150",
 					"protocol": "http",
 					"host": [
 						"127",
@@ -45,7 +45,7 @@
 					"port": "5000",
 					"path": [
 						"posts",
-						"10"
+						"150"
 					]
 				}
 			},
@@ -55,7 +55,23 @@
 			"name": "Q2 API to return the number of posts of provided userid.",
 			"request": {
 				"method": "GET",
-				"header": []
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5000/posts/count/3",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"posts",
+						"count",
+						"3"
+					]
+				}
 			},
 			"response": []
 		},
@@ -63,10 +79,31 @@
 			"name": "Q3 Insert a new record",
 			"request": {
 				"method": "POST",
-				"header": [],
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "default"
+					}
+				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"userId\": 11,\r\n    \"id\": 101,\r\n    \"title\": \"test title\",\r\n    \"body\": \"test body\"\r\n}"
+					"raw": "{\r\n    \"userId\": 11,\r\n    \"id\": 104,\r\n    \"title\": \"test title no. 2\",\r\n    \"body\": \"test body no. 2\"\r\n}"
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/insert/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"insert",
+						""
+					]
 				}
 			},
 			"response": []
@@ -74,48 +111,249 @@
 		{
 			"name": "Q3 Insertion unsuccessful",
 			"request": {
-				"method": "GET",
-				"header": []
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"userId\": 11,\r\n    \"id\": 102,\r\n    \"title\": \"test title no. 3\",\r\n    \"body\": \"test body no. 3\"\r\n}"
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/insert/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"insert",
+						""
+					]
+				}
 			},
 			"response": []
 		},
 		{
 			"name": "Q4 Delete a record - successful",
 			"request": {
-				"method": "GET",
-				"header": []
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5000/delete/5",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"delete",
+						"5"
+					]
+				}
 			},
 			"response": []
 		},
 		{
 			"name": "Q4 Delete - unsuccessful",
 			"request": {
-				"method": "GET",
-				"header": []
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5000/delete/106",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"delete",
+						"106"
+					]
+				}
 			},
 			"response": []
 		},
 		{
 			"name": "Q5 Update title in uppercase of provided id (post id) - successful",
 			"request": {
-				"method": "GET",
-				"header": []
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5000/title/2",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"title",
+						"2"
+					]
+				}
 			},
 			"response": []
 		},
 		{
 			"name": "Q5 Update unsuccessful",
 			"request": {
-				"method": "GET",
-				"header": []
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5000/title/105",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"title",
+						"105"
+					]
+				}
 			},
 			"response": []
 		},
 		{
-			"name": "Q6",
+			"name": "Q6 Get all entries",
 			"request": {
 				"method": "GET",
-				"header": []
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5000/get-entries",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"get-entries"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Q6 GET request",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5000/apis/Anime",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"apis",
+						"Anime"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Q6 POST request",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"API\": \"Manga.im\",\r\n    \"Description\": \"Get the best selling manga apis for free\",\r\n    \"Auth\": \"\",\r\n    \"HTTPS\": true,\r\n    \"Cors\": \"yes\",\r\n    \"Link\": \"https://manga.im/docs\",\r\n    \"Category\": \"Anime\"\r\n}"
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/apis/insert",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"apis",
+						"insert"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Q6 PUT request",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5000/update-https/VirusTotal",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"update-https",
+						"VirusTotal"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Q6 DELETE request",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5000/delete/Axolotl",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"delete",
+						"Axolotl"
+					]
+				}
 			},
 			"response": []
 		}

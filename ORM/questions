@@ -1,0 +1,32 @@
+
+1. Users should be able to create programs, add semesters in programs, add courses in each semester, add sections,
+add students in semester programs, and add instructors in programs.
+2. Users should be able to view the total students and  instructor list, Number of students in
+[each semester, each program, each section.]
+3. Users should be able to view courses that are taught each semester and show sections of each semester.
+show instructors of each semester.
+
+1. Insert
+    a. Program --
+    b. Semesters in programs --
+    c. Departments in programs --
+    d. Courses in each semester --
+    e. Sections in semester --
+    f. Students in sections
+    g. Instructors in departments
+
+2. Get
+    a. total list of students --
+    b. total list of instructors --
+    c. Number of students in each section .
+    d. Number of students in each semester
+    e. Number of students in each program
+
+    f. List of courses in each semester
+    g. List of sections of each semester
+    h. List of instructors of each semester
+
+1. Users should be able to create programs, add semesters in programs, add courses in each semester, add sections, add students in semester programs, and add instructors in programs.
+2. Users should be able to view the total students and  instructor list, Number of students in [each semester, each program, each section.]
+3. Users should be able to view courses that are taught each semester and show sections of each semester. show instructors of each semester.
+

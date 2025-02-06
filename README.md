@@ -8,16 +8,15 @@ This repository is a collection of various Python projects and exercises, each o
 
 The repository is organized into the following branches:
 
-1.  ### Main Branch
+### 1. Main Branch
    - **Description**: Serves as the primary branch containing general information and links to other project-specific branches.
 
-2. ### API Branch
+### 2. API Branch
 This branch contains a **Flask-based REST API** that performs CRUD operations on JSON data. It includes:
 
 a. **`app.py`** - Implements API endpoints to retrieve, insert, update, and delete posts stored in `posts.json`.  
 b. **`q6.py`** - Interacts with an **external API** (`https://api.publicapis.org/entries`), saves data locally in `example.json`, and allows CRUD operations.  
 c. **`API.ipynb`** - A Jupyter Notebook for interactive API testing and exploration.
-
 
 #### Key Features:
 - **Retrieve & filter data:** Fetch posts by user ID and interact with public API entries.
@@ -32,7 +31,7 @@ pip install flask
 python app.py  # or python q6.py
 
 
-3. ### Codewars Branch
+### 3. Codewars Branch
 This branch contains a collection of solutions to coding challenges from [Codewars](https://www.codewars.com/), focusing on enhancing problem-solving skills and mastering Python programming concepts.
 
 #### Key Components:
@@ -48,16 +47,16 @@ This branch contains a collection of solutions to coding challenges from [Codewa
   - Mathematical computations
 
 
-4. ### ORM Branch
+### 4. ORM Branch
 This branch implements **Object-Relational Mapping (ORM) using SQLAlchemy** to manage university-related data such as programs, semesters, courses, sections, students, and instructors.
 
 #### Key Components:
-a. **`db.py`** – Defines the **database schema** and initializes the MySQL database with required tables.
-b. **`api.py`** – Implements **Flask-based API endpoints** for database CRUD operations.
-c. **`ORM_Assignment.postman_collection.json`** – A **Postman collection** for testing API requests.
-d. **`ORM_datacamp_practice.ipynb`** – A **Jupyter Notebook** demonstrating ORM queries and database interactions.
-e. **`orm_database_mysql.sql`** – Contains the **SQL script** for setting up the database.
-f. **`ORM_LMS_ERD.qsee`** – Entity-Relationship Diagram (ERD) for database structure visualization.
+a. **`db.py`** – Defines the **database schema** and initializes the MySQL database with required tables.  
+b. **`api.py`** – Implements **Flask-based API endpoints** for database CRUD operations.  
+c. **`ORM_Assignment.postman_collection.json`** – A **Postman collection** for testing API requests.  
+d. **`ORM_datacamp_practice.ipynb`** – A **Jupyter Notebook** demonstrating ORM queries and database interactions.  
+e. **`orm_database_mysql.sql`** – Contains the **SQL script** for setting up the database.  
+f. **`ORM_LMS_ERD.qsee`** – Entity-Relationship Diagram (ERD) for database structure visualization.  
 g. **`questions.txt`** – Lists key database operations such as inserting programs, retrieving students, and counting instructors.
 
 #### Features:
@@ -74,7 +73,7 @@ python db.py  # Initializes the database
 python api.py  # Starts the Flask API
 
 
-5.### Pandas Branch
+### 5. Pandas Branch
 This branch focuses on **data analysis and manipulation** using the **Pandas library**. It contains multiple assignments and practice notebooks that explore various Pandas functionalities, such as data cleaning, grouping, visualization, and time series analysis.
 
 #### Key Components:

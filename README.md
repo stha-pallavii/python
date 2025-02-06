@@ -77,29 +77,29 @@ python api.py  # Starts the Flask API
 This branch focuses on **data analysis and manipulation** using the **Pandas library**. It contains multiple assignments and practice notebooks that explore various Pandas functionalities, such as data cleaning, grouping, visualization, and time series analysis.
 
 #### Key Components:
-1. **`pandas_assignment_I`**:
-   - Contains notebooks covering:
-     - Getting and knowing your data
-     - Filtering, grouping, and merging data
-     - Time series analysis and data visualization
+a. **`pandas_assignment_I`**:  
+   - Contains notebooks covering:  
+     - Getting and knowing your data  
+     - Filtering, grouping, and merging data  
+     - Time series analysis and data visualization  
 
-2. **`pandas_assignment_II`**:
-   - Focuses on intermediate data manipulation techniques using Pandas.
+b. **`pandas_assignment_II`**:  
+   - Focuses on intermediate data manipulation techniques using Pandas.  
 
-3. **`pandas_assignment_III`**:
-   - Includes a comprehensive assignment analyzing real-world data (e.g., COVID-19 and country data).
-   - Key files:
-     - `assignment_3_pandas.ipynb` – Main notebook.
-     - `countries.csv` & `covid-countries-data.csv` – Datasets for analysis.
+c. **`pandas_assignment_III`**:  
+   - Includes a comprehensive assignment analyzing real-world data (e.g., COVID-19 and country data).  
+   - Key files:  
+     - `assignment_3_pandas.ipynb` – Main notebook.  
+     - `countries.csv` & `covid-countries-data.csv` – Datasets for analysis.  
 
-4. **`pandas_datacamp_practice`**:
-   - A practice notebook (`pandas_datacamp_practice.ipynb`) summarizing exercises from DataCamp.
+d. **`pandas_datacamp_practice`**:  
+   - A practice notebook (`pandas_datacamp_practice.ipynb`) summarizing exercises from DataCamp.  
 
-5. **`pandas_demo_practice`**:
-   - Contains a notebook and dataset for practicing Pandas operations using IMDb's most popular films and series data.
+e. **`pandas_demo_practice`**:  
+   - Contains a notebook and dataset for practicing Pandas operations using IMDb's most popular films and series data.  
   
 
-6. **Final Project Branch**
+6. ### Final Project Branch**
    - **Description**: The culmination of the projects, integrating API development, ORM, and data analysis with Pandas.
    - **Contents**: Comprehensive Python application showcasing accumulated knowledge.
    - **Access**: [API_ORM_Pandas_Project Repository](https://github.com/stha-pallavii/API_ORM_Pandas_Project)

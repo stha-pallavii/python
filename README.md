@@ -9,8 +9,17 @@ This repository is a collection of various Python projects and exercises, each o
 The repository is organized into the following branches:
 
 ### 1. Main Branch
-   - **Description**: Serves as the primary branch containing general information and links to other project-specific branches.
+The main branch contains two notebooks that provide an introduction to Python programming and cover both basic and advanced concepts:
 
+a. **`basic_python.ipynb`**:  
+   - Covers fundamental Python topics, including data types, loops, functions, and basic data structures.  
+   - Suitable for beginners starting their Python journey.  
+
+b. **`adv_python.ipynb`**:  
+   - Focuses on advanced Python concepts like decorators, generators, error handling, and advanced data structures.  
+   - Designed for those looking to deepen their understanding of Python.
+
+     
 ### 2. API Branch
 This branch contains a **Flask-based REST API** that performs CRUD operations on JSON data. It includes:
 

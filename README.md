@@ -14,9 +14,10 @@ The repository is organized into the following branches:
 2. ### API Branch
 This branch contains a **Flask-based REST API** that performs CRUD operations on JSON data. It includes:
 
-a. **`app.py`** - Implements API endpoints to retrieve, insert, update, and delete posts stored in `posts.json`.
-b. **`q6.py`** - Interacts with an **external API** (`https://api.publicapis.org/entries`), saves data locally in `example.json`, and allows CRUD operations.
+a. **`app.py`** - Implements API endpoints to retrieve, insert, update, and delete posts stored in `posts.json`.  
+b. **`q6.py`** - Interacts with an **external API** (`https://api.publicapis.org/entries`), saves data locally in `example.json`, and allows CRUD operations.  
 c. **`API.ipynb`** - A Jupyter Notebook for interactive API testing and exploration.
+
 
 #### Key Features:
 - **Retrieve & filter data:** Fetch posts by user ID and interact with public API entries.
